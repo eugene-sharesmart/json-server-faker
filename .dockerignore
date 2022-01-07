@@ -1,0 +1,4 @@
+node_modules
+yarn.loc
+Dockerfile
+docker-compose.yaml
