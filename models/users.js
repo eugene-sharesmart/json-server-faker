@@ -1,5 +1,6 @@
-import faker from "faker/locale/en_CA";
+import faker from "@faker-js/faker";
 import { v1 as uuid } from "uuid";
+faker.locale = 'en_CA'
 
 export const GetUser = () => {
   const ts = Date.now()

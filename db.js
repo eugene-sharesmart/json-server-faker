@@ -1,5 +1,6 @@
 import { GetPost } from "./models/posts";
 import { GetUser } from "./models/users";
+import { GetDashboard } from "./models/dashboard";
 
 // Building an array of users
 const Users = Array.from({ length: 100 }, GetUser)
@@ -14,9 +15,13 @@ const Posts = Users.map((user) => {
     }
 }).reduce((a, b) => [...a, ...b], [])
 
+// Dashboard
+const Dashboard = Array.from({ length: 1 }, GetDashboard)
+
 export default () => {
   return {
     users: Users
     , posts : Posts
+    , dashboard : Dashboard
   }
 }
